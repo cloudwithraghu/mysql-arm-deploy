@@ -1,0 +1,88 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverName": {
+            "value": "newmysql29022024"
+        },
+        "location": {
+            "value": "northeurope"
+        },
+        "serverEdition": {
+            "value": "Burstable"
+        },
+        "vCores": {
+            "value": 1
+        },
+        "storageSizeGB": {
+            "value": 20
+        },
+        "haEnabled": {
+            "value": "Disabled"
+        },
+        "firewallRules": {
+            "value": {
+                "rules": [
+                    {
+                        "name": "AllowAllAzureServicesAndResourcesWithinAzureIps_2024-2-29_20-43-12",
+                        "endIPAddress": "0.0.0.0",
+                        "startIPAddress": "0.0.0.0"
+                    }
+                ]
+            }
+        },
+        "backupRetentionDays": {
+            "value": 7
+        },
+        "geoRedundantBackup": {
+            "value": "Disabled"
+        },
+        "availabilityZone": {
+            "value": ""
+        },
+        "vmName": {
+            "value": "Standard_B1ms"
+        },
+        "storageIops": {
+            "value": 360
+        },
+        "storageAutogrow": {
+            "value": "Enabled"
+        },
+        "acceleratedLogs": {
+            "value": "Disabled"
+        },
+        "standbyAvailabilityZone": {
+            "value": ""
+        },
+        "autoIoScaling": {
+            "value": "Enabled"
+        },
+        "guid": {
+            "value": "2412774ce6a446009d65fbac680147c4"
+        },
+        "serverParameters": {
+            "value": []
+        },
+        "apiVersion": {
+            "value": "2023-06-01-preview"
+        },
+        "network": {
+            "value": {
+                "publicNetworkAccess": "Enabled"
+            }
+        },
+        "tags": {
+            "value": {}
+        },
+        "administratorLogin": {
+            "value": "dbadmin"
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "version": {
+            "value": "8.0.21"
+        }
+    }
+}
